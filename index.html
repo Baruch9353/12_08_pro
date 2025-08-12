@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokners — Responsive Hero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Inter, sans-serif;
+            background: linear-gradient(180deg, #0f275c, #06152c);
+            color: #e6eef8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .site {
+            width: 100%;
+            max-width: 90vw;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 2vh;
+        }
+
+        /* NAV */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2vh 2vw;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+        }
+
+        .logo {
+            width: 4vh;
+            height: 4vh;
+            border-radius: 0.5vh;
+            background: linear-gradient(135deg, #2ee6a6, #2ea7ff 60%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #041226;
+        }
+
+        .links {
+            display: flex;
+            gap: 2vw;
+            font-size: 1.4vh;
+        }
+
+        .cta {
+            padding: 0.8vh 1.4vw;
+            border-radius: 5vh;
+            border: 1px solid rgba(34, 4, 4, 0.1);
+        }
+
+        /* HERO */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 40%;
+            gap: 4vw;
+            align-items: center;
+            padding: 4vh 2vw;
+        }
+
+        .eyebrow {
+            color: #55c3ff;
+            font-weight: 600;
+            font-size: 1.6vh;
+            margin-bottom: 1vh;
+        }
+
+        h2 {
+            font-size: 4vh;
+            line-height: 1.1;
+            margin-bottom: 2vh;
+        }
+
+        .lead {
+            color: #9aa6b2;
+            font-size: 1.6vh;
+            margin-bottom: 3vh;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1.2vh 2vw;
+            border-radius: 5vh;
+            background: linear-gradient(180deg, #21c66a, #0ca657);
+            color: #cad4d2;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* IMAGE */
+        .hero-right img {
+            width: 100%;
+            height: auto;
+            border-radius: 2vh;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site">
+        <nav class="nav">
+            <div class="brand">
+                <div class="logo">W</div>
+                <h1>Tokners</h1>
+            </div>
+            <div class="links">
+                <a href="#">Our team</a>
+                <a href="#">Tokens</a>
+                <a href="#">Wallet</a>
+                <a href="#">Lightpaper</a>
+            </div>
+            <a class="cta" href="#">Sign In</a>
+        </nav>
+
+        <main class="hero">
+            <div>
+                <div class="eyebrow">At Tokners we are</div>
+                <h2>Reimagining social media through the power of the blockchain.</h2>
+                <p class="lead">Social media 3.0 where influencers and creators launch their own digital currency as
+                    NFTs on our network.</p>
+                <a class="btn" href="#">Learn More</a>
+            </div>
+            <div class="hero-right">
+                <img src="image.png" alt="phones mockup">
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
