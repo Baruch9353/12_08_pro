@@ -72,25 +72,24 @@ main {
     width: 562px;
     height: 162px;
     color: #ffffff;
-    padding-bottom: 250px;
-    padding-top: 92px;
+    padding-bottom: 140px;
+    padding-top: 130px;
 }
 
 .right-side h3 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
 .right-side button {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.60rem;
     background-color: #22a75d;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+    border-radius: 35px;
 }
 
 .right-side button:hover {
